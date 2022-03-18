@@ -27,6 +27,7 @@ body{
                          'main main'
                          'about about'
                          'projects proyects'
+                         'comment comment'
                          'contact contact'
                          'footer footer';
     align-items: center;
@@ -221,6 +222,39 @@ main span:hover{
     display: flex;
     justify-content: space-around;
 }
+.comment-container{
+    grid-area: comment;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .comment{
+    background: #f7b9a167;
+    padding: 1.5em;
+    width: 70%;
+    border-radius: 1em;
+    border: 3.98px solid rgba(255, 255, 255, 0.46);
+    text-align: center;
+
+  }
+  .comment-image {
+    text-align: center;
+  }
+  .comment-text {
+    font-weight:600;
+  }
+  
+  .comment-title {
+    font-size: 12px;
+    color:#61A6AB;
+    text-transform: uppercase;
+  }
+  
+  .project, .comment {
+    margin-block: 2.5em;
+  }
+  
 .contact{
     grid-area: contact;
 }
@@ -260,6 +294,7 @@ main span:hover{
   }
   .form textarea {
     margin-bottom: 2em;
+    height: 8em;
   }
   
 .form button{
@@ -272,6 +307,3 @@ main span:hover{
       margin-bottom: 1em;
 }
   
-  #trucazo {
-    opacity: 0;
-  }

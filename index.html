@@ -4,10 +4,128 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Portfolio</title>
 </head>
 <body>
-    <h1>¡Hola mundo!</h1>
-    <p>Soy Claudia</p>   
+        
+    <div class="container">
+        <header>
+            <nav class="nav-bar">
+                <div class="logo" >
+                    <h2>CPB</h2>
+                </div>
+                <ul class="menu">
+                    <li><a class="active" href="#about-me">HOLA</a></li>
+                    <li><a href="#projects">PROYECTOS</a></li>
+                    <li><a href="#contact">CONTACTO</a></li>
+                </ul>
+                <div class="download-cv">
+                    <a download href="Assets/cv Claudia Piñas Barrera.pdf"> 
+                        <button class="cv">DESCARGAR CV</button> </a>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="info-content" > 
+                <h1 aria-label=" ¡Hola, soy Claudia" class="blast-root"> 
+                    <span class="blast" aria-hidden="true" style="opacity: 1;">¡</span>
+                    <span class="blast" aria-hidden="true" style="opacity: 1;">H</span>
+                    <span class="blast" aria-hidden="true" style="opacity: 1;">o</span>
+                    <span class="blast" aria-hidden="true" style="opacity: 1;">l</span> 
+                    <span class="blast" aria-hidden="true" style="opacity: 1;">a</span>
+                    <span class="blast" aria-hidden="true" style="opacity: 1;">,</span>
+                    <br>
+                    <span class="blast" aria-hidden="true" style="opacity: 1;">s</span> 
+                    <span class="blast" aria-hidden="true" style="opacity: 1;">o</span>
+                    <span class="blast" aria-hidden="true" style="opacity: 1;">y</span>
+                    <br>
+                    <span class="blast" aria-hidden="true" style="opacity: 1;">C</span>
+                    <span class="blast" aria-hidden="true" style="opacity: 1;">l</span> 
+                    <span class="blast" aria-hidden="true" style="opacity: 1;">a</span>
+                    <span class="blast" aria-hidden="true" style="opacity: 1;">u</span>
+                    <span class="blast" aria-hidden="true" style="opacity: 1;">d</span>
+                    <span class="blast" aria-hidden="true" style="opacity: 1;">i</span>
+                    <span class="blast" aria-hidden="true" style="opacity: 1;">a</span>
+                    <span class="blast" aria-hidden="true" style="opacity: 1;">!</span>
+                    <p class="gray-text">Front End Developer</p>
+                    <div class="social">
+                        <a class="social-items" href="https://wa.me/5581451364"> <img src="/Assets/icon-phone.svg" alt=""></a>
+                        <a class="social-items" href="mailto:clau.pi.ba@gmail.com"> <img src="/Assets/icon-important_mail.svg" alt=""></a>
+                        <a class="social-items" href="https://github.com/ClaudiaPiBa"> <img src="/Assets/icon-github.svg" alt=""></a>
+                        <a class="social-items" href="https://linkedin.com/in/clau-piba"> <img src="/Assets/linkedin-icon-2.svg" alt=""></a>
+                     </div>
+                </h1>
+               
+                 </div>
+            <div class="photo">
+                <img src="Assets/photoClau.png" alt="Claudia Piñas picture">
+            </div>
+        </main>
+        
+        <section class="about-me" id="about-me"> 
+            <div class="about">
+                <p>Me apasiona la idea de poder llegar a tantas personas a través de una pantalla, esforzarme en brindarles la mejor experiencia y poder compartir ideas, productos y/o entretenimiento para mejorar su día a día. </p>
+                
+                     <h6>Aquí hay algunos proyectos que me gustaría compartir</h6>
+                     <img src="/Assets/icons-down.svg" alt="">
+            </div>
+        </section>
+        <section class="projects-container" id="projects">
+            <article class="card">
+                <div class="card-img">
+                    <img src="/Assets/data-lovers.svg" alt="">
+                </div>
+                <div class="card-description">
+                    <h5>Data Lovers</h5>
+                    <p>Desarrollo de página web para visualizar, filtrar y ordenar un set de data con temática de Pokémon.</p>
+                    <h6>HTML | CSS | JavaScript | GitHub | Figma</h6>
+                    <div class="projects-links">
+                          <a href="https://susanalab.github.io/CDMX011-data-lovers/"> 
+                            <button class="cv">PROYECTO</button></a>
+                              <a href="https://github.com/ClaudiaPiBa/CDMX011-data-lovers"> 
+                                <button class="cv"> <img src="/Assets/icon-github.svg" alt="icon-github" width="15px"> CÓDIGO</button> </a>
+                        </div>
+                </div>   
+            </article>
+            
+        </section>
+       <section class="contact" id="contact">
+        <div class="contact-container">
+            <form id="form" action="https://formsubmit.co/clau.pinas.bar@gmail.com" method="POST"" class="form">
+                <h5><span>HABLEMOS</span></h5>
+                <label for="name">Nombre Completo <span>*</span></label>
+                <input name="name" required type="text" placeholder="Nombre">
+                <label for="email">Correo electrónico <span>*</span></label>
+                <input name="email" type="email" required placeholder="usuario@gmail.com">
+                <label for="message">Mensaje</label>
+                <textarea name="message" rows="10"></textarea>
+                <button type="submit" class="cv">enviar mensaje</button>
+                <tipo de entrada="nombre oculto"="_captcha" valor="falso"></tipo>
+              </form>
+              
+        </div>
+       </section>
+       <footer class="footer">
+        <div class="social">
+            <a class="social-items" href="https://wa.me/5581451364"> <img src="/Assets/icon-phone.svg" alt=""></a>
+            <a class="social-items" href="mailto:clau.pi.ba@gmail.com"> <img src="/Assets/icon-important_mail.svg" alt=""></a>
+            <a class="social-items" href="https://github.com/ClaudiaPiBa"> <img src="/Assets/icon-github.svg" alt=""></a>
+            <a class="social-items" href="https://linkedin.com/in/clau-piba"> <img src="/Assets/linkedin-icon-2.svg" alt=""></a>
+         </div>
+        <p class="footer-message">
+        Claudia Piñas - Front End Developer
+        </p>
+        <p class="footer-copyright">
+          Copyright 2022 - Todos los derechos reservados.
+        </p>
+       
+      </footer>
+            
+    </div>
+
+   
+     
+
 </body>
 </html>
